@@ -1,0 +1,6 @@
+com\johnif\config\RestTemplateHandler.class
+com\johnif\ExcludeFromComponentScan.class
+com\johnif\MovieRibbonClient.class
+com\johnif\entity\User.class
+com\johnif\config\RibbonConfig.class
+com\johnif\controller\MovieController.class

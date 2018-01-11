@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: foobar
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: microservice-config-server
+      #uri: http://localhost:8080
+      profile: dev
+      label: master #当后端存储为git的时候  默认是master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://yy:yy@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: microservice-consumer-movie-ribbon-hystrix
+server:
+  port: 7904
+  ##context-path: /movieribbon
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://yy:yy@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
